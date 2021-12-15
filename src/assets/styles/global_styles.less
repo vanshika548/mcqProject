@@ -1,0 +1,21 @@
+//global mixin to set component background properties
+@constant_value:rgb(96, 235, 119);
+.set_component_background(@color:#FFFFFF,@width:auto,@height:auto,@padding:5px,@hover-value:0px) {  
+    background-color: @color;
+    width:@width -  1px;
+    height:@height;
+    padding:@padding @padding;
+}
+
+//merge
+.container_shadow(@top:0,@bottom:0,@right:10px,@color:#555) {
+    box-shadow+: inset @top @bottom @right @color;
+}
+
+//parametric mixin
+.border-radius(@radius: 5px) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+

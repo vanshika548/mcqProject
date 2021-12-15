@@ -1,0 +1,8 @@
+{
+  "en":{
+    "LABEL_SUBMIT" : "Submit",
+    "LABEL_OK":"Ok",
+    "LABEL_EMAIL":"Email:",
+    "LABEL_PASSWORD":"Password:"
+  }
+}
