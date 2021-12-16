@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "email": "vanshika@gmail.com",
+      "name": "vanshika rastogi",
+      "password": "vanshika@123",
+      "id": 1
+    },
+    {
+      "email": "vanshika.rastogi@magicedtech.com",
+      "password": "vanshoika@123",
+      "name": "vanshika",
+      "id": 2
+    },
+    {
+      "name": "vanshika rastogi",
+      "email": "vanshika.rastogi@magicedtech.com",
+      "password": "vvanshika@123",
+      "id": 3
+    },
+    {
+      "name": "yyyyy",
+      "email": "vanshikarastogi689@gmail.com",
+      "password": "vvvv",
+      "id": 4
+    },
+    {
+      "name": "jjjjjj",
+      "email": "vanshikarastogi689@gmail.com",
+      "password": "vvvv",
+      "id": 5
+    },
+    {
+      "name": "jjjjjj",
+      "email": "vanshikarastogi689@gmail.com",
+      "password": "vvvv",
+      "id": 6
+    }
+  ]
+}
