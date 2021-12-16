@@ -12,7 +12,7 @@
             <label>Enter Password : </label>
             <input type="password" v-model="password" id="password">
         </div>
-        <button class="btn" @click="signup"> Signup</button>
+        <button class="btn" @click="signup()"> Signup</button>
     </div>
 </template>
 <script>

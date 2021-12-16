@@ -10,6 +10,7 @@
       <button @click="changeRoute('mcq')">MCQ</button>
       <button @click="changeRouteTwo('restaurant')">Restaurant</button>
       <!-- <router-link to="/result">Result</router-link> | -->
+       <!-- <router-link to="/todo">TODO</router-link> | -->
     </div>
     <router-view/>
   </div>

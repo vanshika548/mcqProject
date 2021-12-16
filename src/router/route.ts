@@ -2,6 +2,7 @@ import Home from '../views/Home.vue';
 import MCQComponent from '../components/mcqcomponent/mcqComponent.vue';
 import Result from '../components/mcqcomponent/reviewResponse/reviewResponse.vue'
 import Restaurant from '../components/restaurantComponent/signup/signup.vue'
+import TODO from '../components/restaurantComponent/todo/todo.vue'
 
 const routes = [
     {
@@ -20,6 +21,11 @@ const routes = [
       path: '/mcq',
       name: 'MCQ',
       component: MCQComponent
+    },
+    {
+      path: '/todo',
+      name: 'TODO',
+      component: TODO
     },
     {
       path: '/restaurant',
