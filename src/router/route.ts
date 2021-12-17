@@ -1,8 +1,9 @@
 import Home from '../views/Home.vue';
 import MCQComponent from '../components/mcqcomponent/mcqComponent.vue';
 import Result from '../components/mcqcomponent/reviewResponse/reviewResponse.vue'
-import Restaurant from '../components/restaurantComponent/signup/signup.vue'
+import signup from '../components/restaurantComponent/signup/signup.vue'
 import TODO from '../components/restaurantComponent/todo/todo.vue'
+// import ToDo from '../components/TODO/todoComponent/ToDo.vue'
 
 const routes = [
     {
@@ -22,16 +23,26 @@ const routes = [
       name: 'MCQ',
       component: MCQComponent
     },
+    // {
+    //   path: '/ToDo',
+    //   name: 'ToDo',
+    //   component: ToDo
+    // },
+    // {
+    //   path: '/todo',
+    //   name: 'TODO',
+    //   component: TODO
+    // },
     {
-      path: '/todo',
-      name: 'TODO',
-      component: TODO
+      path: '/signup',
+      name: 'signup',
+      component: signup
     },
     {
-      path: '/restaurant',
-      name: 'Restaurant',
-      component: Restaurant
-    },
+         path: '/todo',
+         name: 'TODO',
+       component: TODO
+       },
     {
       path: '/result',
       name: 'result',

@@ -1,100 +1,28 @@
 {
   "users": [
     {
-      "email": "vanshika@gmail.com",
-      "name": "vanshika rastogi",
-      "password": "vanshika@123",
-      "id": 1
+      "id": 31,
+      "title": "task31"
     },
     {
-      "email": "vanshika.rastogi@magicedtech.com",
-      "password": "vanshoika@123",
-      "name": "vanshika",
-      "id": 2
+      "id": 30,
+      "title": "task1"
     },
     {
-      "name": "vanshika rastogi",
-      "email": "vanshika.rastogi@magicedtech.com",
-      "password": "vvanshika@123",
-      "id": 3
+      "title": "task21",
+      "id": 32
     },
     {
-      "name": "yyyyy",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 4
+      "title": "task22",
+      "id": 33
     },
     {
-      "name": "jjjjjj",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 5
+      "title": "task1",
+      "id": 34
     },
     {
-      "name": "jjjjjj",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 6
-    },
-    {
-      "name": "ddd",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 7
-    },
-    {
-      "name": "akshara",
-      "email": "akshara@gmail.com",
-      "password": "akshara@123",
-      "id": 8
-    },
-    {
-      "name": "tulika",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 9
-    },
-    {
-      "name": "yyyyy",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 10
-    },
-    {
-      "name": "yyyyyyyyyyyyyyy",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 11
-    },
-    {
-      "name": "krati",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 12
-    },
-    {
-      "name": "tulika",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 13
-    },
-    {
-      "name": "tulika",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 14
-    },
-    {
-      "name": "nishu",
-      "email": "vanshikarastogi689@gmail.com",
-      "password": "vvvv",
-      "id": 15
-    },
-    {
-      "name": "vanshikja",
-      "email": "vanshika@gmail.com",
-      "password": "vvvv",
-      "id": 16
+      "title": "task34",
+      "id": 35
     }
   ]
 }
