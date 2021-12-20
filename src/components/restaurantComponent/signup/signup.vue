@@ -1,20 +1,25 @@
 <template>
-    <div class="info">
-        <div class="info1">
-            <label >Enter Name : </label>
-            <input type="text" v-model="name" id="name"> 
+    <div class="content">
+      <div class="flex-div">
+        <div class="name-content">
+          <h1 class="logo">To-do List</h1>
+          <p>Make yourself Productive</p>
         </div>
-        <div class="info2" >
-            <label>Enter Email : </label>
-            <input type="text" v-model="email" id="email">
-        </div>
-        <div class="info3">
-            <label>Enter Password : </label>
-            <input type="password" v-model="password" id="password">
-        </div>
-        <button class="btn" @click="signup()"> Signup</button>
+          <form>
+              <ul v-for="err in error" :key="err">
+                  <li>{{err}}</li>
+              </ul>
+            <input type="text" placeholder="Email or Phone Number" id="email" ref="email" v-model="userDetails.email" :class="[userDetails.email === '' ? 'red' : '']" />
+            <input type="password" placeholder="Password" id="password" v-model="userDetails.password" :class="[userDetails.password==='' ? 'red' : '']">
+            <button class="login" @click="signup()">Log In</button>
+            <a href="#">Forgot Password ?</a>
+            <hr>
+            <button class="create-account" @click="signup()">Create New Account</button>
+          </form>
+      </div>
     </div>
 </template>
+
 <script>
 import {signup} from './signup'
 export default signup

@@ -1,30 +1,38 @@
-import {Vue} from 'vue-property-decorator'
+import {Vue,Component} from 'vue-property-decorator'
 import axios from 'axios';
 import { Route } from 'vue-router';
 
+type user = {
+    email : string;
+    password : any
+}
+
+
+@Component
 export class signup extends Vue{
 
+public error : string[] = [];
 
+public userDetails : user = {
+    email : '',
+    password : ""
+}
      signup() {
-        //console.log("clicked")
-        // const name = document.getElementById("name") as HTMLInputElement
-        // //console.log(name.value)
-        // const email = document.getElementById("email") as HTMLInputElement
-        // //console.log(email.value)
-        // const password = document.getElementById("password") as HTMLInputElement
-        // //console.log(password.value)
-        // let result = await axios.post("http://localhost:3000/users",{
-        //     name : name.value,
-        //     email:email.value,
-        //     password:password.value
-        // })
-        // console.log(result)
-        // //console.log(result)
-        // if(result.status==201){
-        //     // alert("signup donre")
-        //     localStorage.setItem('data',JSON.stringify(result))
-        //  }
-         this.$router.push('/todo')
+         if(this.userDetails.email==''){
+             this.error.push("Email is required")
+         }
+         if(this.userDetails.password==''){
+            this.error.push("Password is required")
+        }
+        if(this.userDetails.email != '' && this.userDetails.password != ''){
+            let email = this.$refs.email as any
+            console.log("email--->",email.value)
+            let password = document.getElementById('password') as any
+            console.log("password---->",password.value)
+            alert("validation successful")
+            this.$router.push('/todo')
+        }
+         
     }
 
 }

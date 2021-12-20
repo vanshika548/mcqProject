@@ -10,7 +10,7 @@ export class todo extends Vue{
 
     public isCompleted : boolean = false;
 
-
+    public isLoading:any= true;
     
     public msg : string = "message"
 
@@ -25,6 +25,7 @@ export class todo extends Vue{
         //  if (this.newTask) {
             let obj = {
                 title: this.newTask,
+                completed : this.isCompleted
               }
           this.tasksList.push({...obj});
         //   this.$forceUpdate()
@@ -32,6 +33,7 @@ export class todo extends Vue{
         //}
         console.log(this.tasksList)
         localStorage.setItem('task',JSON.stringify(this.tasksList))
+        this.newTask=''
       }
       
        clearAll(){
@@ -44,24 +46,34 @@ export class todo extends Vue{
 
       display(){
           console.log("display called")
-          this.isCompleted = true
-          alert("task completed")
-          console.log("task completed")
+          this.isLoading = !this.isLoading;
       }
 
-      deleteTask(){
+      deleteTask(index : number){
         console.log("delete task called")
         // this.msg=''
-        this.tasksList=[]
+        this.tasksList.splice(index,1)
       }
 
-      clearCompleted(){
+      clearCompleted(index : number){
           console.log("clearCompleted called")
-          if(this.isCompleted==true){
-            this.tasksList=[]
-              console.log("clear completed")
-          }
+         
+        this.tasksList = this.itemsToDo();
+         }
+
+         itemsToDo(){
+             return this.tasksList.filter(task=>!task.completed)
+         }
+        
+      edit(){
+        console.log("completed task");
+        this.tasksList = this.itemsToadd() 
       }
+      
+      itemsToadd(){
+         return this.tasksList.filter(task => task.completed)
+      }
+      
 
       beforeMount(){
           const data : any  = localStorage.getItem('task')
@@ -74,4 +86,17 @@ export class todo extends Vue{
         this.tasksList = JSON.parse(data)
         console.log(" created tasklist--->",this.tasksList ,"and data------->",data)
       }
+
+      back(){
+        this.$router.push('/signup')
+      }
+
+      allTask(){
+        console.log("all task");
+        // return this.tasksList
+        const data: any = localStorage.getItem('task')
+        this.tasksList = JSON.parse(data)
+        console.log("tasklist--->", this.tasksList, "and data------->", data)
+        return data
+    }
 }
