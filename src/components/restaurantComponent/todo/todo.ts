@@ -5,13 +5,9 @@ import axios from 'axios';
 export class todo extends Vue{
    
     public newTask : string = ''
-    
     public tasksList : Array<any> = []
-
     public isCompleted : boolean = false;
-
     public isLoading:any= true;
-    
     public msg : string = "message"
 
        addTask() {
@@ -27,7 +23,7 @@ export class todo extends Vue{
                 title: this.newTask,
                 completed : this.isCompleted
               }
-          this.tasksList.push({...obj});
+          this.tasksList.unshift({...obj});
         //   this.$forceUpdate()
         //   this.newTask = '';
         //}
@@ -42,6 +38,7 @@ export class todo extends Vue{
              this.tasksList=[]
            }
            console.log("this.tasks.length-->",this.tasksList.length)
+           localStorage.setItem('task','')
       }
 
       display(){
